@@ -8,11 +8,12 @@ terraform {
     }
   }
   # Update Terraform Cloud Backend Block Information below
-  backend "remote" {
-    organization = "hcta-demo1"
+  terraform {
+  cloud {
+    organization = "hcta-demo-1a"
 
     workspaces {
-      name = "cli-driven-demo"
+      name = "cli-driven-1a"
     }
   }
 }
